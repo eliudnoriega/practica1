@@ -38,6 +38,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("ABB Bajo Demanda"));
 
         jToggleButton1.setText("Agregar Personas");
+        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton1ActionPerformed(evt);
+            }
+        });
 
         jToggleButton2.setText("Ver Árbol Binario de Búsqueda");
         jToggleButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -110,6 +115,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_jToggleButton4ActionPerformed
+
+    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
+        // TODO add your handling code here:
+        AgregarPersona aP= new AgregarPersona();
+        aP.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     /**
      * @param args the command line arguments
