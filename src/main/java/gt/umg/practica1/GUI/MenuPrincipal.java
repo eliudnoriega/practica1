@@ -5,6 +5,8 @@
  */
 package gt.umg.practica1.GUI;
 
+import main.java.gt.umg.practica1.GUI.Vistaa;
+
 /**
  *
  * @author melvin.noriega@megapaca.com
@@ -109,6 +111,8 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
         // TODO add your handling code here:
+        Vistaa vista=new Vistaa();
+        vista.setVisible(true);
     }//GEN-LAST:event_jToggleButton2ActionPerformed
 
     private void jToggleButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton4ActionPerformed
@@ -154,6 +158,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new MenuPrincipal().setVisible(true);
+                
             }
         });
     }
